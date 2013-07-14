@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background = "@raw/store_background">
+
+    <ImageView
+        android:id="@+id/done_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="26dp"
+        android:src="@raw/done_button" />
+
+    <ImageView
+        android:id="@+id/help_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/done_store"
+        android:layout_marginRight="49dp"
+        android:layout_toLeftOf="@+id/done_store"
+        android:src="@raw/help" />
+
+    <ImageView
+        android:id="@+id/tools_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/done_store"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="41dp"
+        android:src="@raw/tools_button" />
+
+    <ImageView
+        android:id="@+id/food_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tools_button"
+        android:layout_below="@+id/tools_button"
+        android:layout_marginTop="43dp"
+        android:src="@raw/food_button" />
+
+    <ImageView
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tools_button"
+        android:layout_marginLeft="52dp"
+        android:src="@raw/buy_button" />
+
+    <ImageView
+        android:id="@+id/buy_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help_store"
+        android:layout_centerHorizontal="true"
+        android:src="@raw/shovel" />
+
+    <TextView
+        android:id="@+id/money_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buy_button"
+        android:layout_alignTop="@+id/help_store"
+        android:text="YOU HAVE $1000 LEFT"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/display_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/help_store"
+        android:layout_alignRight="@+id/buy_pic"
+        android:layout_marginRight="39dp"
+        android:text="COST: $100"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

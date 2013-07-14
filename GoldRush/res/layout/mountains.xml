@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/mountains" >
+
+    <TextView
+        android:id="@+id/mine_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="132dp"
+        android:layout_marginTop="34dp"
+        android:text="ENERGY LEFT: 100/100"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/mine_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mine_energy"
+        android:layout_below="@+id/mine_energy"
+        android:layout_marginTop="49dp"
+        android:text="MONEY: $1000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/mine_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mine_energy"
+        android:layout_centerVertical="true"
+        android:src="@raw/mine_button" />
+
+    <ImageView
+        android:id="@+id/mine_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/mine_button"
+        android:layout_marginLeft="151dp"
+        android:src="@raw/mine_blank" />
+
+    <TextView
+        android:id="@+id/mine_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mine_button"
+        android:layout_below="@+id/mine_button"
+        android:layout_marginTop="29dp"
+        android:text="HEADING INSIDE THE MINE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/done_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/mine_money"
+        android:paddingLeft="10dp"
+        android:src="@raw/done_button" />
+
+    <ImageView
+        android:id="@+id/mine_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mine_money"
+        android:layout_alignTop="@+id/done_mine"
+        android:src="@raw/help" />
+
+</RelativeLayout>

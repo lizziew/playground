@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/river_close" >
+
+    <TextView
+        android:id="@+id/energylevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="82dp"
+        android:layout_marginTop="89dp"
+        android:text="ENERGY LEFT: 100/100"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/moneypan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/energylevel"
+        android:layout_below="@+id/energylevel"
+        android:layout_marginTop="42dp"
+        android:text="MONEY: $1000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/river_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/moneypan"
+        android:layout_marginRight="64dp"
+        android:src="@raw/help" />
+
+    <ImageView
+        android:id="@+id/river_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/river_help"
+        android:layout_toRightOf="@+id/river_help"
+        android:src="@raw/done_button" />
+
+    <ImageView
+        android:id="@+id/pan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/river_help"
+        android:layout_alignLeft="@+id/moneypan"
+        android:layout_marginBottom="34dp"
+        android:src="@raw/pan_button" />
+
+    <ImageView
+        android:id="@+id/pan_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pan_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:src="@raw/panning_start" />
+
+</RelativeLayout>

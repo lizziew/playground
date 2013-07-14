@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background = "@raw/tent_background">
+
+    <ImageView
+        android:id="@+id/done_tent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginRight="21dp"
+        android:src="@raw/done_button" />
+
+    <ImageView
+        android:id="@+id/help_tent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/done_tent"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/done_tent"
+        android:src="@raw/help" />
+
+    <ImageView
+        android:id="@+id/eat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tent_display"
+        android:layout_marginLeft="42dp"
+        android:src="@raw/eat_button" />
+
+    <ImageView
+        android:id="@+id/sleep_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/help_tent"
+        android:layout_alignLeft="@+id/eat_button"
+        android:layout_marginBottom="38dp"
+        android:src="@raw/sleep_button" />
+
+    <TextView
+        android:id="@+id/tent_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/help_tent"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/sleep_button"
+        android:text="STANDING AROUND"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/energy_tent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tent_display"
+        android:layout_alignLeft="@+id/help_tent"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="43dp"
+        android:text="ENERGY: 100/100"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/tent_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help_tent"
+        android:layout_alignLeft="@+id/tent_status"
+        android:src="@raw/standing" />
+
+    <TextView
+        android:id="@+id/coffee_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listlabel"
+        android:layout_alignTop="@+id/sleep_button"
+        android:layout_marginTop="23dp"
+        android:text="0 CUPS OF COFFEE (+4 ENERGY)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/egg_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/coffee_display"
+        android:layout_alignRight="@+id/pancake_display"
+        android:text="0 EGGS (+10 ENERGY)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pancake_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eat_button"
+        android:layout_alignRight="@+id/listlabel"
+        android:text="0 STACKS OF PANCAKES (+10 ENERGY)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/listlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/done_tent"
+        android:layout_alignTop="@+id/tent_display"
+        android:layout_marginTop="25dp"
+        android:text="LIST OF YOUR FOOD SUPPLIES:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

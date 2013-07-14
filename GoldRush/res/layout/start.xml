@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/start_background" >
+
+    <ImageView
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="103dp"
+        android:layout_marginLeft="212dp"
+        android:src="@raw/begin_button" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/begin"
+        android:layout_marginLeft="196dp"
+        android:layout_toRightOf="@+id/begin"
+        android:src="@raw/settings_button" />
+    
+</RelativeLayout>

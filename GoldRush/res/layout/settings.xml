@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/settings_background" >
+
+    <ImageView
+        android:id="@+id/newgame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@raw/newgame_button" />
+
+    <Switch
+        android:id="@+id/soundswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="106dp"
+        android:text="SOUND" />
+
+    <Switch
+        android:id="@+id/musicswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/soundswitch"
+        android:layout_alignBottom="@+id/soundswitch"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="84dp"
+        android:text="MUSIC" />
+
+    <ImageView
+        android:id="@+id/main_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newgame_button"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@+id/musicswitch"
+        android:src="@raw/main" />
+
+    <ImageView
+        android:id="@+id/returngame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/main_settings"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/main_settings"
+        android:src="@raw/returngame" />
+
+</RelativeLayout>

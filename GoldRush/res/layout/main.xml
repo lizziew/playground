@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/main_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/mountains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@raw/mountain" />
+
+    <ImageView
+        android:id="@+id/river"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mountains"
+        android:src="@raw/river" />
+
+    <ImageView
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/river"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="26dp"
+        android:src="@raw/store" />
+
+    <ImageView
+        android:id="@+id/tent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/store"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/store"
+        android:src="@raw/tent" />
+
+    <TextView
+        android:id="@+id/energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tent"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/tent"
+        android:text="ENERGY: 100/100"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/energy"
+        android:layout_alignLeft="@+id/energy"
+        android:text="MONEY: $1000 "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/money"
+        android:layout_alignTop="@+id/tent"
+        android:text="LEVEL: 1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/main_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/energy"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/energy"
+        android:src="@raw/help" />
+
+    <TextView
+        android:id="@+id/nextlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_help"
+        android:layout_below="@+id/river"
+        android:text="$1000 UNTIL NEXT LEVEL"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/settings_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/main_help"
+        android:src="@raw/settings_main" />
+
+</RelativeLayout>
