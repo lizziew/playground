@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Movie Sieve</title>
+     <script src = "http://d3js.org/d3.v3.min.js"></script> 
+</head>
+
+<body>
+
+     <script>
+
+       var width = 1200,
+           height = 700;
+
+       d3.select("body")
+         .append("p")
+         .text("Top 100 Movies of All Time in the US")
+         .style("font-size", "20px")
+         .append("p")
+         .text("data from http://www.imdb.com/boxoffice/alltimegross")
+         .style("font-size", "10px")
+         .append("p")
+         .text("The bigger the bubble, the more popular the genre.")
+         .style("font-size", "15px")
+         .append("p")
+         .text("Click on a genre and see a more detailed treemap underneath the bubble chart, colored by decade.")
+         .style("font-size", "15px"); 
+
+       var canvas = d3.select("body")
+                      .append("svg")
+                      .attr("width", width)
+                      .attr("height", height); 
+
+       var pack = d3.layout.pack()
+                    .size([width, height])
+                    .padding(40);
+
+       var rscale = d3.scale.linear()
+                      .domain([0,180])
+                      .range([0,200]); 
+
+       var color = d3.scale.category20(); 
+
+       d3.json("moviegenre.json", function(data) {
+
+              var nodes = pack.nodes(data);
+
+              var node = canvas.selectAll(".node")
+                               .data(nodes)
+                               .enter() 
+                                    .append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function(d) {return "translate(" + d.x + "," + d.y+ ")";})
+
+              var treeThere = 0; 
+
+              node.on("click", click);
+              function click(d) {
+
+                 if(d.children == null) {
+
+                       if(treeThere == 1) {
+
+                           d3.select("#treeGenre").remove(); 
+                       }
+
+                       treeThere = 1;
+
+                       canvas2 = d3.select("body")
+                                   .append("svg")
+                                   .attr("width", 1400)
+                                   .attr("height", 700)
+                                   .attr("id", "treeGenre"); 
+
+                       d3.json(d.name + ".json", function(data) {
+
+                            var treemap = d3.layout.treemap()
+                                            .size([1400, 700])
+                                            .nodes(data);
+
+                            var cells = canvas2.selectAll(".cell")
+                                               .data(treemap)
+                                               .enter()
+                                               .append("g")
+                                               .attr("class", "cell"); 
+
+                            var color = d3.scale.category10();
+
+                            var fontSize = d3.scale.linear()
+                                                   .domain([15000,980000])
+                                                   .range([14,60]);
+
+                            cells.append("rect")
+                                 .attr("x", function(d) {return d.x;})
+                                 .attr("y", function(d) {return d.y;})
+                                 .attr("width", function(d){return d.dx;})
+                                 .attr("height", function(d) {return d.dy;})
+                                 .attr("fill", function(d) {return d.children? null: color(d.parent.name);})
+                                 .attr("stroke", "#fff"); 
+
+                            cells.append("foreignObject")
+                                 .attr("x", function(d) {return d.x;})
+                                 .attr("y", function(d) {return  d.y+5;})
+                                 .attr("width", function(d) {return d.dx;})
+                                 .attr("height", function(d) {return d.dy;})
+                                 .append("xhtml:body")
+                                 .html(function(d){return '<div style="width:"+d.dx+"px;">'+d.name+'</div>'})
+				 .style("font-size",function(d){return fontSize(d.dx*d.dy)+"px"}); 
+
+			     node.on("click", click);
+
+                       }); 
+                       
+                 }
+
+              }
+
+              node.append("circle")
+                    .attr("r", function(d){return rscale(d.r);})
+                    .attr("fill", function(d) {return d.children?"#fff" : color(d.name);})
+                    .attr("opacity", .25) 
+	            .on("mouseover", function() {
+                        d3.select(this).attr("opacity", 1.0)
+		    })		 
+                    .on("mouseout", function() {
+                        d3.select(this).attr("opacity", .25)
+		    })
+                    .attr("stroke", function(d) {return d.children? "#fff":"#ADADAD";})
+                    .attr("stroke-width", "2");
+
+               node.append("text")
+                   .text(function(d) {return d.children? "" : d.name;})
+                   .attr("text-anchor", "middle")
+
+
+       }); 
+
+     </script>
+
+</body>
+
+</html>

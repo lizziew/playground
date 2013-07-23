@@ -1,0 +1,23 @@
+{"name": "drama", "value": 5237.167969, "children":[
+{"name": "dec70", "value": 0.000000, "children": [
+]},{"name": "dec80", "value": 0.000000, "children": [
+]},{"name": "dec90", "value": 1946.337280, "children": [
+{"name":"Titanic (1997) ", "value": 658.672302},
+{"name":"The Lion King (1994) ", "value": 422.783783},
+{"name":"Forrest Gump (1994) ", "value": 329.691193},
+{"name":"The Sixth Sense (1999) ", "value": 293.501678},
+{"name":"Twister (1996) ", "value": 241.688385}
+]},{"name": "dec00", "value": 2416.732666, "children": [
+{"name":"The Dark Knight (2008) ", "value": 533.316040},
+{"name":"The Passion of the Christ (2004) ", "value": 370.270935},
+{"name":"The Twilight Saga: New Moon (2009) ", "value": 296.623627},
+{"name":"I Am Legend (2007) ", "value": 256.386230},
+{"name":"The Blind Side (2009) ", "value": 255.950378},
+{"name":"Bruce Almighty (2003) ", "value": 242.589584},
+{"name":"Cast Away (2000) ", "value": 233.630478},
+{"name":"Signs (2002) ", "value": 227.965683}
+]},{"name": "dec10", "value": 874.098022, "children": [
+{"name":"The Twilight Saga: Eclipse (2010) ", "value": 300.523102},
+{"name":"The Twilight Saga: Breaking Dawn - Part 2 (2012) ", "value": 292.298920},
+{"name":"The Twilight Saga: Breaking Dawn - Part 1 (2011) ", "value": 281.276001}
+]}]}

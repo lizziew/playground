@@ -1,0 +1,23 @@
+{"name": "animation", "value": 5266.421387, "children":[
+{"name": "dec70", "value": 0.000000, "children": [
+]},{"name": "dec80", "value": 0.000000, "children": [
+]},{"name": "dec90", "value": 668.607178, "children": [
+{"name":"The Lion King (1994) ", "value": 422.783783},
+{"name":"Toy Story 2 (1999) ", "value": 245.823395}
+]},{"name": "dec00", "value": 2930.517090, "children": [
+{"name":"Shrek 2 (2004) ", "value": 436.471039},
+{"name":"Finding Nemo (2003) ", "value": 380.838867},
+{"name":"Shrek the Third (2007) ", "value": 320.706665},
+{"name":"Up (2009) ", "value": 292.979553},
+{"name":"Monsters, Inc. (2001) ", "value": 289.907410},
+{"name":"Shrek (2001) ", "value": 267.652008},
+{"name":"The Incredibles (2004) ", "value": 261.437592},
+{"name":"Cars (2006) ", "value": 244.052765}
+]},{"name": "dec10", "value": 1667.297363, "children": [
+{"name":"Toy Story 3 (2010) ", "value": 414.984497},
+{"name":"Despicable Me 2 (2013) ", "value": 276.158997},
+{"name":"Despicable Me (2010) ", "value": 251.501648},
+{"name":"Monsters University (2013) ", "value": 248.998001},
+{"name":"Shrek Forever After (2010) ", "value": 238.371994},
+{"name":"Brave (2012) ", "value": 237.282181}
+]}]}

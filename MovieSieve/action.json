@@ -1,0 +1,55 @@
+{"name": "action", "value": 16379.474609, "children":[
+{"name": "dec70", "value": 460.935669, "children": [
+{"name":"Star Wars (1977) ", "value": 460.935669}
+]},{"name": "dec80", "value": 1327.608032, "children": [
+{"name":"Star Wars: Episode VI - Return of the Jedi (1983) ", "value": 309.125397},
+{"name":"Star Wars: Episode V - The Empire Strikes Back (1980) ", "value": 290.158752},
+{"name":"Batman (1989) ", "value": 251.188919},
+{"name":"Raiders of the Lost Ark (1981) ", "value": 242.374451},
+{"name":"Beverly Hills Cop (1984) ", "value": 234.760498}
+]},{"name": "dec90", "value": 1251.431641, "children": [
+{"name":"Star Wars: Episode I - The Phantom Menace (1999) ", "value": 474.544678},
+{"name":"Independence Day (1996) ", "value": 306.124054},
+{"name":"Twister (1996) ", "value": 241.688385},
+{"name":"The Lost World: Jurassic Park (1997) ", "value": 229.074524}
+]},{"name": "dec00", "value": 8490.849609, "children": [
+{"name":"Avatar (2009) ", "value": 760.505859},
+{"name":"The Dark Knight (2008) ", "value": 533.316040},
+{"name":"Pirates of the Caribbean: Dead Man's Chest (2006) ", "value": 423.032623},
+{"name":"Spider-Man (2002) ", "value": 403.706360},
+{"name":"Transformers: Revenge of the Fallen (2009) ", "value": 402.076691},
+{"name":"Star Wars: Episode III - Revenge of the Sith (2005) ", "value": 380.262543},
+{"name":"The Lord of the Rings: The Return of the King (2003) ", "value": 377.019257},
+{"name":"Spider-Man 2 (2004) ", "value": 373.377899},
+{"name":"The Lord of the Rings: The Two Towers (2002) ", "value": 340.478912},
+{"name":"Spider-Man 3 (2007) ", "value": 336.530304},
+{"name":"Transformers (2007) ", "value": 318.759918},
+{"name":"Iron Man (2008) ", "value": 318.298187},
+{"name":"Indiana Jones and the Kingdom of the Crystal Skull (2008) ", "value": 317.011108},
+{"name":"The Lord of the Rings: The Fellowship of the Ring (2001) ", "value": 313.837585},
+{"name":"Star Wars: Episode II - Attack of the Clones (2002) ", "value": 310.675598},
+{"name":"Pirates of the Caribbean: At World's End (2007) ", "value": 309.404144},
+{"name":"Pirates of the Caribbean: The Curse of the Black Pearl (2003) ", "value": 305.388672},
+{"name":"The Matrix Reloaded (2003) ", "value": 281.492493},
+{"name":"The Incredibles (2004) ", "value": 261.437592},
+{"name":"Star Trek (2009) ", "value": 257.704102},
+{"name":"Night at the Museum (2006) ", "value": 250.863266},
+{"name":"X-Men: The Last Stand (2006) ", "value": 234.360016},
+{"name":"Hancock (2008) ", "value": 227.946274},
+{"name":"The Bourne Ultimatum (2007) ", "value": 227.225052},
+{"name":"Rush Hour 2 (2001) ", "value": 226.138458}
+]},{"name": "dec10", "value": 4848.652832, "children": [
+{"name":"The Avengers (2012) ", "value": 623.279541},
+{"name":"The Dark Knight Rises (2012) ", "value": 448.130646},
+{"name":"Iron Man 3 (2013) ", "value": 406.850983},
+{"name":"Olympus Has Fallen (2013) ", "value": 400.824677},
+{"name":"Transformers: Dark of the Moon (2011) ", "value": 352.358765},
+{"name":"Iron Man 2 (2010) ", "value": 312.057434},
+{"name":"Skyfall (2012) ", "value": 304.360291},
+{"name":"Inception (2010) ", "value": 292.568848},
+{"name":"Man of Steel (2013) ", "value": 283.181091},
+{"name":"The Amazing Spider-Man (2012) ", "value": 262.030670},
+{"name":"Pirates of the Caribbean: On Stranger Tides (2011) ", "value": 241.063873},
+{"name":"Brave (2012) ", "value": 237.282181},
+{"name":"Fast & Furious 6 (2013) ", "value": 236.533173}
+]}]}

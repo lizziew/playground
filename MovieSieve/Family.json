@@ -1,0 +1,22 @@
+{"name": "family", "value": 4786.473633, "children":[
+{"name": "dec70", "value": 0.000000, "children": [
+]},{"name": "dec80", "value": 673.549438, "children": [
+{"name":"E.T. the Extra-Terrestrial (1982) ", "value": 434.949463},
+{"name":"Ghostbusters (1984) ", "value": 238.600006}
+]},{"name": "dec90", "value": 285.761230, "children": [
+{"name":"Home Alone (1990) ", "value": 285.761230}
+]},{"name": "dec00", "value": 2582.138184, "children": [
+{"name":"Harry Potter and the Sorcerer's Stone (2001) ", "value": 317.557892},
+{"name":"Harry Potter and the Half-Blood Prince (2009) ", "value": 301.956970},
+{"name":"Harry Potter and the Order of the Phoenix (2007) ", "value": 292.000854},
+{"name":"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005) ", "value": 291.709839},
+{"name":"Harry Potter and the Goblet of Fire (2005) ", "value": 289.994385},
+{"name":"Harry Potter and the Chamber of Secrets (2002) ", "value": 261.970612},
+{"name":"How the Grinch Stole Christmas (2000) ", "value": 260.031036},
+{"name":"Harry Potter and the Prisoner of Azkaban (2004) ", "value": 249.358734}
+]},{"name": "dec10", "value": 1245.024414, "children": [
+{"name":"Harry Potter and the Deathly Hallows: Part 2 (2011) ", "value": 380.955627},
+{"name":"Alice in Wonderland (2010) ", "value": 334.185211},
+{"name":"Harry Potter and the Deathly Hallows: Part 1 (2010) ", "value": 294.980438},
+{"name":"Oz the Great and Powerful (2013) ", "value": 234.903076}
+]}]}

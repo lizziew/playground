@@ -1,0 +1,21 @@
+{
+"name":"all",
+"value":95000,
+"children": [
+{"name": "Action", "value": 16379.475586},
+{"name": "Adventure", "value": 23791.552734},
+{"name": "Animation", "value": 5266.421387},
+{"name": "Biography", "value": 255.950378},
+{"name": "Comedy", "value": 7386.184082},
+{"name": "Crime", "value": 2881.895020},
+{"name": "Drama", "value": 5237.167969},
+{"name": "Family", "value": 4786.473633},
+{"name": "Fantasy", "value": 14212.207031},
+{"name": "Horror", "value": 260.000000},
+{"name": "Mystery", "value": 586.070557},
+{"name": "Romance", "value": 1508.968506},
+{"name": "Sci-Fi", "value": 5488.439453},
+{"name": "Sport", "value": 255.950378},
+{"name": "Thriller", "value": 3337.334961}
+]
+}

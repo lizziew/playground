@@ -1,0 +1,48 @@
+{"name": "fantasy", "value": 14212.208008, "children":[
+{"name": "dec70", "value": 460.935669, "children": [
+{"name":"Star Wars (1977) ", "value": 460.935669}
+]},{"name": "dec80", "value": 1233.863770, "children": [
+{"name":"E.T. the Extra-Terrestrial (1982) ", "value": 434.949463},
+{"name":"Star Wars: Episode VI - Return of the Jedi (1983) ", "value": 309.125397},
+{"name":"Batman (1989) ", "value": 251.188919},
+{"name":"Ghostbusters (1984) ", "value": 238.600006}
+]},{"name": "dec90", "value": 474.544678, "children": [
+{"name":"Star Wars: Episode I - The Phantom Menace (1999) ", "value": 474.544678}
+]},{"name": "dec00", "value": 8426.466797, "children": [
+{"name":"Avatar (2009) ", "value": 760.505859},
+{"name":"Pirates of the Caribbean: Dead Man's Chest (2006) ", "value": 423.032623},
+{"name":"Spider-Man (2002) ", "value": 403.706360},
+{"name":"Star Wars: Episode III - Revenge of the Sith (2005) ", "value": 380.262543},
+{"name":"The Lord of the Rings: The Return of the King (2003) ", "value": 377.019257},
+{"name":"Spider-Man 2 (2004) ", "value": 373.377899},
+{"name":"The Lord of the Rings: The Two Towers (2002) ", "value": 340.478912},
+{"name":"Spider-Man 3 (2007) ", "value": 336.530304},
+{"name":"Harry Potter and the Sorcerer's Stone (2001) ", "value": 317.557892},
+{"name":"The Lord of the Rings: The Fellowship of the Ring (2001) ", "value": 313.837585},
+{"name":"Star Wars: Episode II - Attack of the Clones (2002) ", "value": 310.675598},
+{"name":"Pirates of the Caribbean: At World's End (2007) ", "value": 309.404144},
+{"name":"Pirates of the Caribbean: The Curse of the Black Pearl (2003) ", "value": 305.388672},
+{"name":"Harry Potter and the Half-Blood Prince (2009) ", "value": 301.956970},
+{"name":"The Twilight Saga: New Moon (2009) ", "value": 296.623627},
+{"name":"Harry Potter and the Order of the Phoenix (2007) ", "value": 292.000854},
+{"name":"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005) ", "value": 291.709839},
+{"name":"Harry Potter and the Goblet of Fire (2005) ", "value": 289.994385},
+{"name":"Harry Potter and the Chamber of Secrets (2002) ", "value": 261.970612},
+{"name":"How the Grinch Stole Christmas (2000) ", "value": 260.031036},
+{"name":"Harry Potter and the Prisoner of Azkaban (2004) ", "value": 249.358734},
+{"name":"Bruce Almighty (2003) ", "value": 242.589584},
+{"name":"Hancock (2008) ", "value": 227.946274}
+]},{"name": "dec10", "value": 3616.398682, "children": [
+{"name":"The Hunger Games (2012) ", "value": 407.999268},
+{"name":"Harry Potter and the Deathly Hallows: Part 2 (2011) ", "value": 380.955627},
+{"name":"Alice in Wonderland (2010) ", "value": 334.185211},
+{"name":"The Hobbit: An Unexpected Journey (2012) ", "value": 303.001221},
+{"name":"The Twilight Saga: Eclipse (2010) ", "value": 300.523102},
+{"name":"Harry Potter and the Deathly Hallows: Part 1 (2010) ", "value": 294.980438},
+{"name":"The Twilight Saga: Breaking Dawn - Part 2 (2012) ", "value": 292.298920},
+{"name":"Man of Steel (2013) ", "value": 283.181091},
+{"name":"The Twilight Saga: Breaking Dawn - Part 1 (2011) ", "value": 281.276001},
+{"name":"The Amazing Spider-Man (2012) ", "value": 262.030670},
+{"name":"Pirates of the Caribbean: On Stranger Tides (2011) ", "value": 241.063873},
+{"name":"Oz the Great and Powerful (2013) ", "value": 234.903076}
+]}]}

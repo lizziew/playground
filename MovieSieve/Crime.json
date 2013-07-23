@@ -1,0 +1,15 @@
+{"name": "crime", "value": 2881.895264, "children":[
+{"name": "dec70", "value": 0.000000, "children": [
+]},{"name": "dec80", "value": 234.760498, "children": [
+{"name":"Beverly Hills Cop (1984) ", "value": 234.760498}
+]},{"name": "dec90", "value": 0.000000, "children": [
+]},{"name": "dec00", "value": 986.679565, "children": [
+{"name":"The Dark Knight (2008) ", "value": 533.316040},
+{"name":"The Bourne Ultimatum (2007) ", "value": 227.225052},
+{"name":"Rush Hour 2 (2001) ", "value": 226.138458}
+]},{"name": "dec10", "value": 1660.455078, "children": [
+{"name":"The Dark Knight Rises (2012) ", "value": 448.130646},
+{"name":"Despicable Me 2 (2013) ", "value": 276.158997},
+{"name":"Despicable Me (2010) ", "value": 251.501648},
+{"name":"Fast & Furious 6 (2013) ", "value": 236.533173}
+]}]}

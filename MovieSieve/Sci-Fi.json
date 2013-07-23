@@ -1,0 +1,25 @@
+{"name": "scifi", "value": 5488.439941, "children":[
+{"name": "dec70", "value": 0.000000, "children": [
+]},{"name": "dec80", "value": 290.158752, "children": [
+{"name":"Star Wars: Episode V - The Empire Strikes Back (1980) ", "value": 290.158752}
+]},{"name": "dec90", "value": 1187.694580, "children": [
+{"name":"Jurassic Park (1993) ", "value": 402.348358},
+{"name":"Independence Day (1996) ", "value": 306.124054},
+{"name":"Men in Black (1997) ", "value": 250.147614},
+{"name":"The Lost World: Jurassic Park (1997) ", "value": 229.074524}
+]},{"name": "dec00", "value": 2531.320312, "children": [
+{"name":"Transformers: Revenge of the Fallen (2009) ", "value": 402.076691},
+{"name":"Transformers (2007) ", "value": 318.759918},
+{"name":"Iron Man (2008) ", "value": 318.298187},
+{"name":"The Matrix Reloaded (2003) ", "value": 281.492493},
+{"name":"Star Trek (2009) ", "value": 257.704102},
+{"name":"I Am Legend (2007) ", "value": 256.386230},
+{"name":"X-Men: The Last Stand (2006) ", "value": 234.360016},
+{"name":"War of the Worlds (2005) ", "value": 234.277054},
+{"name":"Signs (2002) ", "value": 227.965683}
+]},{"name": "dec10", "value": 1479.266357, "children": [
+{"name":"The Hunger Games (2012) ", "value": 407.999268},
+{"name":"Iron Man 3 (2013) ", "value": 406.850983},
+{"name":"Transformers: Dark of the Moon (2011) ", "value": 352.358765},
+{"name":"Iron Man 2 (2010) ", "value": 312.057434}
+]}]}
