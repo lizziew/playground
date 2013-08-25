@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>ForbesCeleb</title>
+    <script src = "http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+                 .axis path,
+                        .axis line {
+                                fill: none;
+                                stroke: black;
+                                shape-rendering: crispEdges;
+                        }
+
+                        #tooltip {
+                                position: absolute;
+                                width: 200px;
+                                height: auto;
+                                padding: 10px;
+                                background-color: white;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                border-radius: 10px;
+                                -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                                -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                                pointer-events: none;
+                        }
+
+                        #tooltip.hidden {
+                                display: none;
+                        }
+
+                        #tooltip p {
+                                margin: 0;
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                line-height: 20px;
+                        }
+    </style>
+  </head>
+
+  <body>
+
+    <p><strong>Visual Analysis of Forbes Top 100 Celebrities</strong> </p> 
+
+    <div id = "tooltip" class = "hidden">
+      <p><strong><span id = "name">"job"</span></strong></p>
+      <p><span id = "type">"job"</span></p> 
+    </div> 
+    
+    <script>
+      var generalw = 700;
+      var generalh = 700;
+
+      var width = 500;
+      var height = 500; 
+      var border = 50; 
+
+      d3.json("forbes.json", function(json) {
+         var canvas = d3.select("body")
+                        .append("svg")
+                        .attr("width", generalw)
+                        .attr("height", generalh); 
+
+         var xScale = d3.scale.linear()
+                              .domain([0,d3.max(json, function(d) { return d.SocialRank; })])
+                              .range([width+border,border]); 
+         
+         var yScale = d3.scale.linear()
+                              .domain([0,d3.max(json, function(d) { return d.Marketability; })])
+                              .range([border,height+border]);   
+
+         var color = d3.scale.category20();      
+
+         var xAxis = d3.svg.axis() 
+                            .scale(xScale)
+                            .orient("bottom")
+                            .ticks(2)
+                            .tickFormat("");
+
+         var yAxis = d3.svg.axis() 
+                            .scale(yScale)
+                            .orient("left")
+                            .ticks(2)
+                            .tickFormat("");
+
+         var showArray = [0,1,1,1,1,1,1,1,1,1,1,1];
+
+         var showType = function() {  
+          canvas.selectAll("circle")
+               .data(json)
+               .attr("cx", function(d) { return xScale(d.SocialRank); })
+               .attr("cy", function(d) { return yScale(d.Marketability); })
+               .attr("r", 3)
+               .attr("fill", function(d) { 
+                  if(showArray[1] == 1 && d.Type == "Actor")
+                     return color(d.Type); 
+                  if(showArray[2] == 1 && d.Type == "Actress")
+                    return color(d.Type);
+                  if(showArray[3] == 1 && d.Type == "Athlete")
+                    return color(d.Type);
+                  if(showArray[4] == 1 && d.Type == "Author")
+                    return color(d.Type);
+                  if(showArray[5] == 1 && d.Type == "Comedian")
+                    return color(d.Type); 
+                  if(showArray[6] == 1 && d.Type == "Director or Producer")
+                    return color(d.Type); 
+                  if(showArray[7] == 1 && d.Type == "Model")
+                    return color(d.Type); 
+                  if(showArray[8] == 1 && d.Type == "Musician")
+                    return color(d.Type); 
+                  if(showArray[9] == 1 && d.Type == "Personality")
+                    return color(d.Type); 
+                  if(showArray[10] == 1 && d.Type == "TV Actor")
+                    return color(d.Type); 
+                  if(showArray[11] == 1 && d.Type == "TV Actress")
+                    return color(d.Type);
+                  return "white"; 
+               })
+               .on("mouseover", function(d) {
+                     var xPosition = parseFloat(d3.select(this).attr("cx"));
+                     var yPosition = parseFloat(d3.select(this).attr("cy"));
+                
+                     d3.select("#tooltip")
+                        .style("left", xPosition + "px")
+                        .style("top", yPosition + "px")   
+                        .select("#name")
+                        .text(d.Name)
+                        
+                     d3.select("#tooltip")
+                        .select("#type")
+                        .text(d.Type);
+
+                     d3.select("#tooltip").classed("hidden", false);
+               })
+               .on("mouseout", function() {
+                  d3.select("#tooltip").classed("hidden", true);
+               })
+         };
+
+         var typeArray = ["None", "Actors", "Actresses", "Athletes", "Authors", "Comedians", "Directors/Producers", "Models", "Musicians", "Personalities", "TV Actors", "TV Actresses"];
+
+          canvas.selectAll("circle")
+               .data(json)
+               .enter()
+               .append("circle")
+               .attr("cx", function(d) { return xScale(d.SocialRank); })
+               .attr("cy", function(d) { return yScale(d.Marketability); })
+               .attr("r", 3)
+               .attr("fill", function(d) { return color(d.Type); })
+               .on("mouseover", function(d) {
+                   var xPosition = parseFloat(d3.select(this).attr("cx"));
+                   var yPosition = parseFloat(d3.select(this).attr("cy"));
+                
+                   d3.select("#tooltip")
+                        .style("left", xPosition + "px")
+                        .style("top", yPosition + "px")   
+                        .select("#name")
+                        .text(d.Name)
+                        
+                   d3.select("#tooltip")
+                        .select("#type")
+                        .text(d.Type);
+
+                  d3.select("#tooltip").classed("hidden", false);
+               })
+               .on("mouseout", function() {
+                  d3.select("#tooltip").classed("hidden", true);
+               })
+
+         canvas.selectAll("rect")
+               .data(typeArray)
+               .enter()
+               .append("rect")
+               .attr("x", function(d, i) {
+                   if(i <= 5)
+                     return i*100;
+                   else
+                     return (i-6)*100; 
+               })
+               .attr("y", function(d,i) {
+                  if(i <= 5) 
+                    return 605;
+                  else
+                    return 635; 
+               })
+               .attr("width", 100)
+               .attr("height", 30)
+               .attr("fill", function(d) { 
+                   if(d == "None")
+                      return "#17becf";
+                   if(d == "Actors") 
+                      return "#2ca02c";
+                   if(d == "Actresses")
+                      return "#98df8a";
+                   if(d == "Athletes")
+                      return "#ffbb78"; 
+                   if(d == "Authors")
+                      return "#d62728";
+                   if(d == "Comedians")
+                      return "#c5b0d5"; 
+                   if(d == "Directors/Producers")
+                      return "#ff7f0e";
+                   if(d == "Models")
+                      return "#8c564b"; 
+                   if(d == "Musicians")
+                      return "#aec7e8";
+                   if(d == "Personalities")
+                      return "#1f77b4";
+                   if(d == "TV Actors")
+                      return "#ff9896"; 
+                   if(d == "TV Actresses")
+                      return "#9467bd"; 
+               })
+               .on("click", function(d) {
+                   if(d == "None") {
+                     for(var i = 0; i < 12; i++)
+                       showArray[i] = 0; 
+                   }
+                   if(d == "Actors") {
+                      if(showArray[1] == 1)
+                        showArray[1] = 0;
+                      else
+                        showArray[1] = 1; 
+                   }
+                   if(d == "Actresses") {
+                     if(showArray[2] == 1)
+                       showArray[2] = 0;
+                     else
+                       showArray[2] = 1; 
+                   }
+                   if(d == "Athletes") {
+                      if(showArray[3] == 1)
+                        showArray[3] = 0;
+                      else
+                        showArray[3] = 1; 
+                   }
+                   if(d == "Authors") {
+                      if(showArray[4] == 1)
+                        showArray[4] = 0;
+                      else
+                        showArray[4] = 1; 
+                   }
+                   if(d == "Comedians") {
+                      if(showArray[5] == 1)
+                        showArray[5] = 0;
+                      else
+                        showArray[5] = 1; 
+                   }
+                   if(d == "Directors/Producers") {
+                      if(showArray[6] == 1)
+                        showArray[6] = 0;
+                      else
+                        showArray[6] = 1; 
+                   }
+                   if(d == "Models") {
+                      if(showArray[7] == 1)
+                        showArray[7] = 0;
+                      else
+                        showArray[7] = 1; 
+                   }
+                   if(d == "Musicians") {
+                      if(showArray[8] == 1)
+                        showArray[8] = 0;
+                      else
+                        showArray[8] = 1; 
+                   }
+                   if(d == "Personalities") {
+                      if(showArray[9] == 1)
+                        showArray[9] = 0;
+                      else
+                        showArray[9] = 1; 
+                   }
+                   if(d == "TV Actors") {
+                      if(showArray[10] == 1)
+                        showArray[10] = 0;
+                      else
+                        showArray[10] = 1; 
+                   }
+                   if(d == "TV Actresses") {
+                      if(showArray[11] == 1)
+                        showArray[11] = 0;
+                      else
+                        showArray[11] = 1; 
+                   }
+                   showType(); 
+               }); 
+
+         canvas.selectAll("text")
+               .data(typeArray)
+               .enter()
+               .append("text")
+               .text(function(d) {return d;})
+               .attr("text-anchor", "middle")
+               .attr("x", function(d,i) {
+                  if(i <= 5)
+                   return i*100+50;
+                  else
+                   return (i-6)*100+50; 
+               })
+               .attr("y", function(d,i) {
+                  if(i <= 5)
+                     return 625;
+                  else
+                     return 655; 
+               })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px") 
+               .attr("fill", "white"); 
+
+         canvas.append("g")
+               .attr("class", "axis")
+               .attr("transform", "translate(0," + (height+75) + ")")
+               .call(xAxis); 
+
+         canvas.append("g")
+               .attr("class", "axis")
+               .attr("transform", "translate(25,0)")
+               .call(yAxis); 
+
+         canvas.append("text")
+               .attr("x", border)
+               .attr("y", height+95)
+               .style("text-anchor", "middle")
+               .text("less")
+               .style("font-family", "sans-serif"); 
+
+         canvas.append("text")
+               .attr("x", border+width)
+               .attr("y", height+95)
+               .style("text-anchor", "middle")
+               .text("more")
+               .style("font-family", "sans-serif"); 
+
+         canvas.append("text")
+               .attr("x", border+width/2)
+               .attr("y", height+95)
+               .style("text-anchor", "middle")
+               .text("social networking power")
+               .style("font-family", "sans-serif")
+               .style("font-weight", "bold"); 
+
+         canvas.append("text")
+               .attr("transform", "rotate(-90)")
+               .attr("x", -border)
+               .attr("y", -5)
+               .attr("dy", "1em")
+               .style("text-anchor", "middle")
+               .text("more")
+               .style("font-family", "sans-serif"); 
+
+         canvas.append("text")
+               .attr("transform", "rotate(-90)")
+               .attr("x", -(border+height))
+               .attr("y", -5)
+               .attr("dy", "1em")
+               .style("text-anchor", "middle")
+               .text("less")
+               .style("font-family", "sans-serif"); 
+
+         canvas.append("text")
+               .attr("transform", "rotate(-90)")
+               .attr("x", -(border+height/2))
+               .attr("y", -5)
+               .attr("dy", "1em")
+               .style("text-anchor", "middle")
+               .text("marketability")
+               .style("font-family", "sans-serif")
+               .style("font-weight", "bold"); 
+         
+      }); 
+    </script>
+
+  </body>
+
+</html>

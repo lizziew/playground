@@ -1,0 +1,602 @@
+[
+  {
+    "Name":"Oprah Winfrey",
+    "Type":"Personality",
+    "SocialRank":19,
+    "Marketability":25
+  },
+  {
+    "Name":"Lady Gaga",
+    "Type":"Musician",
+    "SocialRank":3,
+    "Marketability":65
+  },
+  {
+    "Name":"Steven Spielberg",
+    "Type":"Director or Producer",
+    "SocialRank":89,
+    "Marketability":4
+  },
+  {
+    "Name":"Beyonce Knowles",
+    "Type":"Musician",
+    "SocialRank":5,
+    "Marketability":25
+  },
+  {
+    "Name":"Madonna",
+    "Type":"Musician",
+    "SocialRank":22,
+    "Marketability":73
+  },
+  {
+    "Name":"Taylor Swift",
+    "Type":"Musician",
+    "SocialRank":7,
+    "Marketability":41
+  },
+  {
+    "Name":"Bon Jovi",
+    "Type":"Musician",
+    "SocialRank":17,
+    "Marketability":25
+  },
+  {
+    "Name":"Roger Federer",
+    "Type":"Athlete",
+    "SocialRank":33,
+    "Marketability":41
+  },
+  {
+    "Name":"Justin Bieber",
+    "Type":"Musician",
+    "SocialRank":1,
+    "Marketability":96
+  },
+  {
+    "Name":"Ellen DeGeneres",
+    "Type":"Personality",
+    "SocialRank":9,
+    "Marketability":19
+  },
+  {
+    "Name":"Hugh Jackman",
+    "Type":"Actor",
+    "SocialRank":32,
+    "Marketability":14
+  },
+  {
+    "Name":"Jennifer Lopez",
+    "Type":"Musician",
+    "SocialRank":14,
+    "Marketability":21
+  },
+  {
+    "Name":"Rihanna",
+    "Type":"Musician",
+    "SocialRank":2,
+    "Marketability":60
+  },
+  {
+    "Name":"Coldplay",
+    "Type":"Musician",
+    "SocialRank":11,
+    "Marketability":41
+  },
+  {
+    "Name":"Tiger Woods",
+    "Type":"Athlete",
+    "SocialRank":47,
+    "Marketability":86
+  },
+  {
+    "Name":"LeBron James",
+    "Type":"Athlete",
+    "SocialRank":20,
+    "Marketability":76
+  },
+  {
+    "Name":"Simon Cowell",
+    "Type":"Personality",
+    "SocialRank":43,
+    "Marketability":68
+  },
+  {
+    "Name":"Katy Perry",
+    "Type":"Musician",
+    "SocialRank":4,
+    "Marketability":32
+  },
+  {
+    "Name":"David Beckham",
+    "Type":"Athlete",
+    "SocialRank":16,
+    "Marketability":39
+  },
+  {
+    "Name":"Robert Downey Jr",
+    "Type":"Actor",
+    "SocialRank":68,
+    "Marketability":4
+  },
+  {
+    "Name":"Leonardo DiCaprio",
+    "Type":"Actor",
+    "SocialRank":35,
+    "Marketability":4
+  },
+  {
+    "Name":"Tyler Perry",
+    "Type":"Director or Producer",
+    "SocialRank":34,
+    "Marketability":50
+  },
+  {
+    "Name":"Channing Tatum",
+    "Type":"Actor",
+    "SocialRank":40,
+    "Marketability":36
+  },
+  {
+    "Name":"Kobe Bryant",
+    "Type":"Athlete",
+    "SocialRank":23,
+    "Marketability":75
+  },
+  {
+    "Name":"Dwayne Johnson",
+    "Type":"Actor",
+    "SocialRank":27,
+    "Marketability":4
+  },
+  {
+    "Name":"Ryan Seacrest",
+    "Type":"Personality",
+    "SocialRank":29,
+    "Marketability":50
+  },
+  {
+    "Name":"Tom Cruise",
+    "Type":"Actor",
+    "SocialRank":39,
+    "Marketability":56
+  },
+  {
+    "Name":"Mark Wahlberg",
+    "Type":"Actor",
+    "SocialRank":53,
+    "Marketability":4
+  },
+  {
+    "Name":"Seth MacFarlane",
+    "Type":"Director or Producer",
+    "SocialRank":54,
+    "Marketability":37
+  },
+  {
+    "Name":"Donald Trump",
+    "Type":"Personality",
+    "SocialRank":59,
+    "Marketability":95
+  },
+  {
+    "Name":"Cristiano Ronaldo",
+    "Type":"Athlete",
+    "SocialRank":6,
+    "Marketability":92
+  },
+  {
+    "Name":"Jay-Z",
+    "Type":"Musician",
+    "SocialRank":66,
+    "Marketability":71
+  },
+  {
+    "Name":"Dr. Phil Mcgraw",
+    "Type":"Personality",
+    "SocialRank":64,
+    "Marketability":68
+  },
+  {
+    "Name":"Glenn Beck",
+    "Type":"Personality",
+    "SocialRank":62,
+    "Marketability":90
+  },
+  {
+    "Name":"Will Smith",
+    "Type":"Actor",
+    "SocialRank":12,
+    "Marketability":1
+  },
+  {
+    "Name":"Ben Affleck",
+    "Type":"Actor",
+    "SocialRank":78,
+    "Marketability":4
+  },
+  {
+    "Name":"Rush Limbaugh",
+    "Type":"Personality",
+    "SocialRank":71,
+    "Marketability":87
+  },
+  {
+    "Name":"David Letterman",
+    "Type":"Personality",
+    "SocialRank":77,
+    "Marketability":41
+  },
+  {
+    "Name":"Lionel Messi",
+    "Type":"Athlete",
+    "SocialRank":10,
+    "Marketability":88
+  },
+  {
+    "Name":"Adam Sandler",
+    "Type":"Actor",
+    "SocialRank":13,
+    "Marketability":4
+  },
+  {
+    "Name":"Angelina Jolie",
+    "Type":"Actress",
+    "SocialRank":76,
+    "Marketability":32
+  },
+  {
+    "Name":"E.L. James",
+    "Type":"Author",
+    "SocialRank":79,
+    "Marketability":100
+  },
+  {
+    "Name":"Toby Keith",
+    "Type":"Musician",
+    "SocialRank":45,
+    "Marketability":54
+  },
+  {
+    "Name":"James Patterson",
+    "Type":"Author",
+    "SocialRank":57,
+    "Marketability":78
+  },
+  {
+    "Name":"Howard Stern",
+    "Type":"Personality",
+    "SocialRank":73,
+    "Marketability":93
+  },
+  {
+    "Name":"Carrie Underwood",
+    "Type":"Musician",
+    "SocialRank":28,
+    "Marketability":14
+  },
+  {
+    "Name":"Kenny Chesney",
+    "Type":"Musician",
+    "SocialRank":41,
+    "Marketability":41
+  },
+  {
+    "Name":"Usain Bolt",
+    "Type":"Athlete",
+    "SocialRank":26,
+    "Marketability":60
+  },
+  {
+    "Name":"Jennifer Lawrence",
+    "Type":"Actress",
+    "SocialRank":88,
+    "Marketability":32
+  },
+  {
+    "Name":"Drew Brees",
+    "Type":"Athlete",
+    "SocialRank":61,
+    "Marketability":41
+  },
+  {
+    "Name":"Rafael Nadal",
+    "Type":"Athlete",
+    "SocialRank":25,
+    "Marketability":67
+  },
+  {
+    "Name":"Phil Mickelson",
+    "Type":"Athlete",
+    "SocialRank":81,
+    "Marketability":50
+  },
+  {
+    "Name":"Ashton Kutcher",
+    "Type":"TV Actor",
+    "SocialRank":18,
+    "Marketability":54
+  },
+  {
+    "Name":"Sofia Vergara",
+    "Type":"TV Actress",
+    "SocialRank":50,
+    "Marketability":25
+  },
+  {
+    "Name":"Peter Jackson",
+    "Type":"Director or Producer",
+    "SocialRank":94,
+    "Marketability":78
+  },
+  {
+    "Name":"Serena Williams",
+    "Type":"Athlete",
+    "SocialRank":52,
+    "Marketability":47
+  },
+  {
+    "Name":"Jon Stewart",
+    "Type":"Personality",
+    "SocialRank":51,
+    "Marketability":39
+  },
+  {
+    "Name":"Jerry Bruckheimer",
+    "Type":"Director or Producer",
+    "SocialRank":85,
+    "Marketability":73
+  },
+  {
+    "Name":"Kanye West",
+    "Type":"Musician",
+    "SocialRank":21,
+    "Marketability":99
+  },
+  {
+    "Name":"Jerry Seinfeld",
+    "Type":"Comedian",
+    "SocialRank":44,
+    "Marketability":21
+  },
+  {
+    "Name":"Michael Bay",
+    "Type":"Director or Producer",
+    "SocialRank":94,
+    "Marketability":97
+  },
+  {
+    "Name":"Maria Sharapova",
+    "Type":"Athlete",
+    "SocialRank":36,
+    "Marketability":65
+  },
+  {
+    "Name":"Dr. Dre",
+    "Type":"Musician",
+    "SocialRank":30,
+    "Marketability":64
+  },
+  {
+    "Name":"Jennifer Aniston",
+    "Type":"Actress",
+    "SocialRank":97,
+    "Marketability":1
+  },
+  {
+    "Name":"Tom Brady",
+    "Type":"Athlete",
+    "SocialRank":69,
+    "Marketability":57
+  },
+  {
+    "Name":"Kim Kardashian",
+    "Type":"Personality",
+    "SocialRank":15,
+    "Marketability":98
+  },
+  {
+    "Name":"Charlie Sheen",
+    "Type":"TV Actor",
+    "SocialRank":31,
+    "Marketability":60
+  },
+  {
+    "Name":"Calvin Harris",
+    "Type":"Musician",
+    "SocialRank":37,
+    "Marketability":90
+  },
+  {
+    "Name":"Rachael Ray",
+    "Type":"Personality",
+    "SocialRank":48,
+    "Marketability":21
+  },
+  {
+    "Name":"Kristen Stewart",
+    "Type":"Actress",
+    "SocialRank":80,
+    "Marketability":83
+  },
+  {
+    "Name":"Gwyneth Paltrow",
+    "Type":"Actress",
+    "SocialRank":70,
+    "Marketability":14
+  },
+  {
+    "Name":"Sean Hannity",
+    "Type":"Personality",
+    "SocialRank":72,
+    "Marketability":84
+  },
+  {
+    "Name":"Meryl Streep",
+    "Type":"Actress",
+    "SocialRank":92,
+    "Marketability":4
+  },
+  {
+    "Name":"David Guetta",
+    "Type":"Musician",
+    "SocialRank":8,
+    "Marketability":76
+  },
+  {
+    "Name":"Stephen King",
+    "Type":"Author",
+    "SocialRank":55,
+    "Marketability":25
+  },
+  {
+    "Name":"Christopher Nolan",
+    "Type":"Director or Producer",
+    "SocialRank":94,
+    "Marketability":81
+  },
+  {
+    "Name":"Gordon Ramsay",
+    "Type":"Personality",
+    "SocialRank":67,
+    "Marketability":58
+  },
+  {
+    "Name":"Manny Pacquiao",
+    "Type":"Athlete",
+    "SocialRank":56,
+    "Marketability":60
+  },
+  {
+    "Name":"Tina Fey",
+    "Type":"TV Actress",
+    "SocialRank":81,
+    "Marketability":19
+  },
+  {
+    "Name":"Mark Burnett",
+    "Type":"Director or Producer",
+    "SocialRank":91,
+    "Marketability":89
+  },
+  {
+    "Name":"Gisele Bundchen",
+    "Type":"Model",
+    "SocialRank":65,
+    "Marketability":80
+  },
+  {
+    "Name":"J.K. Rowling",
+    "Type":"Author",
+    "SocialRank":58,
+    "Marketability":37
+  },
+  {
+    "Name":"Alec Baldwin",
+    "Type":"TV Actor",
+    "SocialRank":75,
+    "Marketability":47
+  },
+  {
+    "Name":"Emma Stone",
+    "Type":"Actress",
+    "SocialRank":97,
+    "Marketability":25
+  },
+  {
+    "Name":"Charlize Theron",
+    "Type":"Actress",
+    "SocialRank":87,
+    "Marketability":14
+  },
+  {
+    "Name":"Neil Patrick Harris",
+    "Type":"TV Actor",
+    "SocialRank":49,
+    "Marketability":4
+  },
+  {
+    "Name":"Suzanne Collins",
+    "Type":"Author",
+    "SocialRank":93,
+    "Marketability":94
+  },
+  {
+    "Name":"Floyd Mayweather",
+    "Type":"Athlete",
+    "SocialRank":42,
+    "Marketability":85
+  },
+  {
+    "Name":"Mila Kunis",
+    "Type":"Actress",
+    "SocialRank":97,
+    "Marketability":14
+  },
+  {
+    "Name":"Sandra Bullock",
+    "Type":"Actress",
+    "SocialRank":97,
+    "Marketability":1
+  },
+  {
+    "Name":"Danica Patrick",
+    "Type":"Athlete",
+    "SocialRank":74,
+    "Marketability":53
+  },
+  {
+    "Name":"Amy Poehler",
+    "Type":"TV Actress",
+    "SocialRank":81,
+    "Marketability":32
+  },
+  {
+    "Name":"George Lopez",
+    "Type":"Comedian",
+    "SocialRank":38,
+    "Marketability":21
+  },
+  {
+    "Name":"Ray Romano",
+    "Type":"TV Actor",
+    "SocialRank":90,
+    "Marketability":4
+  },
+  {
+    "Name":"Kevin Hart",
+    "Type":"Comedian",
+    "SocialRank":24,
+    "Marketability":58
+  },
+  {
+    "Name":"Zooey Deschanel",
+    "Type":"TV Actress",
+    "SocialRank":46,
+    "Marketability":25
+  },
+  {
+    "Name":"Louis C.K.",
+    "Type":"Comedian",
+    "SocialRank":63,
+    "Marketability":68
+  },
+  {
+    "Name":"Melissa McCarthy",
+    "Type":"TV Actress",
+    "SocialRank":81,
+    "Marketability":47
+  },
+  {
+    "Name":"Joss Whedon",
+    "Type":"Director or Producer",
+    "SocialRank":86,
+    "Marketability":82
+  },
+  {
+    "Name":"Miranda Kerr",
+    "Type":"Model",
+    "SocialRank":60,
+    "Marketability":71
+  }
+]
