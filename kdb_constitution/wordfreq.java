@@ -42,7 +42,7 @@ public class wordfreq {
 			}
 		});
 
-		PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+		PrintStream out = new PrintStream(new FileOutputStream("solution.txt"));
 		System.setOut(out);
 
 		for(int i = 0; i < list.size(); i++)			
