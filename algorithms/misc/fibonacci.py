@@ -27,7 +27,7 @@ def naive(n):
 	else:
 		return naive(n-1) + naive(n-2)
 
-def linearfib(n):
+def loopfib(n):
 	prev = 0
 	curr = 1
 	res = 1
@@ -44,7 +44,7 @@ def test(n):
 	print "n = ", n
 
 	t0 = time.time()
-	ans_linear = linearfib(n)
+	ans_loop = loopfib(n)
 	t1 = time.time() 
 	ans_matrix = matrixfib(n)
 	t2 = time.time() 
@@ -52,7 +52,7 @@ def test(n):
 	t3 = time.time() 
 
 	print "matrix: ", ans_matrix, "time: ", t2 - t1, " seconds"
-	print "linearfib: ", ans_linear, "time: ", t1 - t0, " seconds"
+	print "linearfib: ", ans_loop, "time: ", t1 - t0, " seconds"
 	print "naive:   ", ans_naive,   "time: ", t3-t2, " seconds."
 
 test(1000000)
