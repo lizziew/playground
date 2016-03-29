@@ -1,9 +1,7 @@
 import java.io.*;
 import java.util.*; 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;  
 
-public class wordfreq {
+public class wordfreq_sb {
 	static class word {
 		String w;
 		int c;
@@ -21,15 +19,23 @@ public class wordfreq {
 	public static void main(String[] args) throws Exception {
 		HashMap<String, Integer> freq = new HashMap<String, Integer>();
 		Scanner s = new Scanner(new File("input.txt"));
-		Pattern pattern = Pattern.compile("[^a-zA-Z ]"); 
-		Matcher matcher; 
+		StringBuilder sb; 
+		String str; 
 
 		while (s.hasNext()){
-			String str = s.next();
+			sb = new StringBuilder(s.next()); 
+			for(int i = sb.length()-1; i >= 0; i--) {
+				if(!Character.isLetter(sb.charAt(i))) {
+					sb.deleteCharAt(i);
+				}
+				else if(sb.charAt(i) >= 'A' && sb.charAt(i) <= 'Z') {
+					sb.setCharAt(i, (char) (sb.charAt(i) + 32)); 
+				}
+			}
 
-			str = pattern.matcher(str).replaceAll("").toLowerCase(); 
+			str = sb.toString(); 
 
-			if(!str.equals("")) {
+			if(str.length() != 0) {
 				Integer total = freq.get(str); 
 				if(total == null) {
 					freq.put(str, 1);
@@ -51,7 +57,7 @@ public class wordfreq {
 			}
 		});
 
-		PrintStream out = new PrintStream(new FileOutputStream("solution_str.txt"));
+		PrintStream out = new PrintStream(new FileOutputStream("solution_sb.txt"));
 
 		for(int i = 0; i < list.size(); i++)			
 			out.println(list.get(i));
