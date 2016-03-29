@@ -1,5 +1,7 @@
 import java.io.*;
-import java.util.*; 
+import java.util.*;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;  
 
 public class wordfreq {
 	static class word {
@@ -19,15 +21,21 @@ public class wordfreq {
 	public static void main(String[] args) throws Exception {
 		HashMap<String, Integer> freq = new HashMap<String, Integer>();
 		Scanner s = new Scanner(new File("input.txt"));
+		Pattern pattern = Pattern.compile("[^a-zA-Z ]"); 
+
 		while (s.hasNext()){
-			String str = s.next().replaceAll("[^a-zA-Z ]", "").toLowerCase();
+			String str = s.next();
+
+			str = pattern.matcher(str).replaceAll("").toLowerCase(); 
+
 			if(!str.equals("")) {
-				if(freq.containsKey(str)) {
-					freq.put(str, freq.get(str)+1); 
+				Integer total = freq.get(str); 
+				if(total == null) {
+					freq.put(str, 1);
 				}
 				else {
-					freq.put(str, 1); 
-				}
+					freq.put(str, total+1);
+				} 
 			}
 		}
 		
